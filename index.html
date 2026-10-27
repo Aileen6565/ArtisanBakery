@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Levain & Hearth | Artisan Sourdough Bakery</title>
+  <meta name="description" content="Handcrafted wild-yeast sourdough breads, viennoiserie, and heritage bakes. Naturally fermented and baked fresh every dawn in our stone deck hearth.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* CSS to change colour of 'Our Story' and 'Contact Us' to yellow */
+    .color-yellow,
+    a[href="#our-story"],
+    a[href="#contact-us"],
+    .nav-link[href="#our-story"],
+    .nav-link[href="#contact-us"] {
+      color: yellow !important;
+    }
+  </style>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥖</text></svg>">
+</head>
+<body>
+
+  <!-- Top Announcement Banner -->
+  <div class="announcement-bar">
+    <div class="container announcement-content">
+      <span class="pulse-indicator"></span>
+      <p>Today's Morning Hearth Bake is fresh out of the stone oven &bull; <strong>Visit us at 418 Artisan Row</strong></p>
+      <div class="baking-status-badge">
+        <span class="status-dot"></span> Oven Deck Active: 480°F
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation (Pure CSS) -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" aria-label="Levain & Hearth Home">
+        <div class="brand-mark">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"/>
+            <path d="M20 7C14 11 12 18 12 25C12 29 15.5 32 20 32C24.5 32 28 29 28 25C28 18 26 11 20 7Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M20 12V27M16 19C18 21 22 21 24 19M15 24C17.5 25.5 22.5 25.5 25 24" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">LEVAIN &amp; HEARTH</span>
+          <span class="brand-subtitle">Artisan Boulangerie &bull; Est. 2018</span>
+        </div>
+      </a>
+
+      <!-- Pure CSS Mobile Menu Checkbox Toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="mobile-toggle" aria-label="Open menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+
+      <!-- Primary Navigation Menu -->
+      <nav class="main-navigation" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          
+          <!-- Dropdown Menu: About Us -->
+          <li class="nav-item has-dropdown">
+            <a href="#our-story" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" id="about-us-menu">
+              About Us
+              <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="about-us-menu">
+              <li><a href="#our-story" class="dropdown-item color-yellow" style="color: yellow;">Our Story</a></li>
+              <li><a href="#contact-us" class="dropdown-item color-yellow" style="color: yellow;">Contact Us</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#signature-bakes" class="nav-link">Daily Bakes</a></li>
+          <li><a href="#oven-schedule" class="nav-link">Bake Schedule</a></li>
+        </ul>
+        <div class="nav-cta-wrapper">
+          <a href="#contact-us" class="btn btn-nav-cta">Reserve Loaf</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section with Assorted Breads Background -->
+    <section class="hero-section" id="hero">
+      <div class="hero-background-wrapper">
+        <img src="assets/assorted-breads.jpg" alt="Assorted artisan sourdough loaves, golden croissants, seeded baguettes, and brioche on rustic wooden table" class="hero-bg-img">
+        <div class="hero-overlay"></div>
+        <div class="hero-grain"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <span class="badge-icon">✦</span>
+          <span>Slow 36-Hour Wild Fermentation</span>
+          <span class="badge-icon">✦</span>
+        </div>
+
+        <h1 class="hero-title">
+          The Sacred Craft of <br>
+          <span class="hero-title-accent">Living Bread.</span>
+        </h1>
+
+        <p class="hero-description">
+          Honoring ancient European Old-World traditions. Handcrafted daily with our 6-year-old wild starter culture, stone-milled regional grains, pure mountain spring water, and French grey sea salt. No shortcuts. Just wild yeast, unhurried time, and stone hearth flame.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#our-story" class="btn btn-primary">
+            <span>Discover Our Story</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact-us" class="btn btn-secondary">
+            <span>Contact &amp; Pre-Order</span>
+          </a>
+        </div>
+
+        <!-- Hero Feature Pillars -->
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Wild Starter Leavened</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <span class="stat-number">36 hrs</span>
+            <span class="stat-label">Slow Cold Ferment</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <span class="stat-number">480°F</span>
+            <span class="stat-label">Granite Stone Deck</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <span class="stat-number">0</span>
+            <span class="stat-label">Commercial Additives</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#our-story" class="scroll-cue" aria-label="Scroll down to Our Story">
+        <span class="scroll-text">Explore</span>
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+      </a>
+    </section>
+
+    <!-- Daily Bakes Section -->
+    <section class="section signature-section" id="signature-bakes">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Stone Hearth Lineup</span>
+          <h2 class="section-title">Today's Fresh Bakes</h2>
+          <p class="section-subtitle">Pulled from our hearth in limited small batches every morning. When the racks are empty, we rest until tomorrow's dawn.</p>
+        </div>
+
+        <div class="bakes-grid">
+          <!-- Item 1 -->
+          <article class="bake-card">
+            <div class="bake-card-glow"></div>
+            <div class="bake-badge">Customer Favorite</div>
+            <div class="bake-icon-wrapper">
+              <span class="bake-icon">🥖</span>
+            </div>
+            <div class="bake-info">
+              <div class="bake-header-flex">
+                <h3 class="bake-title">Country Sourdough Batard</h3>
+                <span class="bake-price">$9.50</span>
+              </div>
+              <p class="bake-desc">High-hydration rustic loaf, blistered deep caramelized crust, moist custard crumb with mild lactic tang and hazelnut undertones.</p>
+              <div class="bake-meta">
+                <span>🌾 Rouge de Bordeaux</span>
+                <span>⏱ 36h Cold Proof</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2 -->
+          <article class="bake-card">
+            <div class="bake-card-glow"></div>
+            <div class="bake-badge">Fresh at 7:30 AM</div>
+            <div class="bake-icon-wrapper">
+              <span class="bake-icon">🥐</span>
+            </div>
+            <div class="bake-info">
+              <div class="bake-header-flex">
+                <h3 class="bake-title">AOP Butter Croissant</h3>
+                <span class="bake-price">$4.75</span>
+              </div>
+              <p class="bake-desc">Seventy-two paper-thin layers of cultured Normandy French butter encased in feather-light golden pastry with delicate honeycomb interior.</p>
+              <div class="bake-meta">
+                <span>🧈 Isigny Butter</span>
+                <span>⏱ 3-Day Lamination</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 3 -->
+          <article class="bake-card">
+            <div class="bake-card-glow"></div>
+            <div class="bake-badge">Heritage Grain</div>
+            <div class="bake-icon-wrapper">
+              <span class="bake-icon">🍞</span>
+            </div>
+            <div class="bake-info">
+              <div class="bake-header-flex">
+                <h3 class="bake-title">Seeded Midnight Boule</h3>
+                <span class="bake-price">$10.50</span>
+              </div>
+              <p class="bake-desc">Dark stoneground rye and ancient spelt grain, thickly crusted with toasted pumpkin, golden sesame, sunflower, and brown flax seeds.</p>
+              <div class="bake-meta">
+                <span>🌱 5-Seed Crust</span>
+                <span>⏱ 40h Fermentation</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 4 -->
+          <article class="bake-card">
+            <div class="bake-card-glow"></div>
+            <div class="bake-badge">Pure Tradition</div>
+            <div class="bake-icon-wrapper">
+              <span class="bake-icon">🥖</span>
+            </div>
+            <div class="bake-info">
+              <div class="bake-header-flex">
+                <h3 class="bake-title">Heirloom Baguette de Tradition</h3>
+                <span class="bake-price">$4.50</span>
+              </div>
+              <p class="bake-desc">Crisp shatter-crust that sings when squeezed, open aerated web structure, toasted wheat aromas, and a clean sweet finish.</p>
+              <div class="bake-meta">
+                <span>🥖 T65 Label Rouge</span>
+                <span>⏱ Poolish + Levain</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 'Our Story' Section -->
+    <section class="section story-section" id="our-story">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-image-column">
+            <div class="story-image-frame">
+              <img src="assets/our-story.jpg" alt="Artisan baker gently shaping sourdough bread dough on flour-dusted timber counter" class="story-img" loading="lazy">
+              <div class="story-accent-card">
+                <span class="accent-year">2018</span>
+                <span class="accent-text">Born from wild yeast &amp; unhurried patience</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="story-text-column">
+            <span class="section-tag color-yellow" style="color: yellow;">Our Story</span>
+            <h2 class="section-title">Flour, Water, Salt, Time. Nothing Else.</h2>
+            
+            <p class="story-lead">
+              At Levain &amp; Hearth, bread is not an industrial commodity—it is living biology, respectful agriculture, and an unbroken communion between the soil and your table.
+            </p>
+
+            <div class="story-body">
+              <p>
+                Our bakery started eight years ago with an antique glass jar of wild sourdough culture affectionately christened <em>"Clara"</em>, captured from the wild yeasts drifting through local orchard blossoms. Today, Clara remains the living mother starter behind every single loaf we bake.
+              </p>
+              <p>
+                We collaborate solely with regional Pacific Northwest organic grain farms practicing regenerative soil stewardship. Their heritage grain varietals are slowly stone-ground at cool temperatures so the nutritious germ, aromatic bran oils, and natural enzymes remain fully alive.
+              </p>
+              <p>
+                By giving our dough 36 to 40 hours of cold retard in willow proofing baskets, the wild microbes gently break down complex starches and gluten into easily digestible nourishment and nuanced, unforgettable flavor.
+              </p>
+            </div>
+
+            <div class="story-pillars">
+              <div class="pillar-item">
+                <div class="pillar-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <div>
+                  <h4>Stone-Milled Heritage Wheat</h4>
+                  <p>Ancient grain varietals rich in minerals, micronutrients, and authentic wheaten perfumes.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div>
+                  <h4>The Art of Slow Ferment</h4>
+                  <p>Extended cold fermentation unlocks digestible nutrition and deep caramelized crust blister.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="story-quote">
+              <blockquote>
+                "Bread is alive. You listen to the temperature of the room, the elasticity of the dough beneath your knuckles, and the singing crackle of the crust as it leaves the stone deck."
+              </blockquote>
+              <cite>&mdash; Matthieu Vance, Founder &amp; Head Baker</cite>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Baking Schedule Section -->
+    <section class="section schedule-section" id="oven-schedule">
+      <div class="container">
+        <div class="schedule-box">
+          <div class="schedule-intro">
+            <span class="section-tag">Oven Schedule</span>
+            <h2 class="section-title">Catch The Warmest Loaf</h2>
+            <p>Our granite stone deck oven fires in timed shifts starting at 4:00 AM. Here is your daily timetable for picking up loaves fresh from the stone hearth racks.</p>
+            
+            <div class="current-status-card">
+              <div class="status-indicator-ring">
+                <span class="pulse-ring"></span>
+              </div>
+              <div>
+                <strong>Morning Hearth Active</strong>
+                <p>Country Batards &amp; Heirloom Baguettes cooling on wooden racks now.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-container">
+            <div class="timeline-item">
+              <div class="time-marker">06:45 AM</div>
+              <div class="timeline-detail">
+                <h4>Viennoiserie &amp; Croissants</h4>
+                <p>Cardamom morning buns, pain au chocolat, flaky butter croissants.</p>
+                <span class="status-pill status-ready">Fresh on Counters</span>
+              </div>
+            </div>
+
+            <div class="timeline-item current-bake">
+              <div class="time-marker">08:15 AM</div>
+              <div class="timeline-detail">
+                <h4>Country Sourdough &amp; Baguettes</h4>
+                <p>Signature rustic batards, whole rye boules, and crisp French baguettes.</p>
+                <span class="status-pill status-hot">Pulling Now &bull; Warm</span>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="time-marker">10:30 AM</div>
+              <div class="timeline-detail">
+                <h4>Focaccia &amp; Specialty Bakes</h4>
+                <p>Rosemary sea-salt focaccia, olive walnut loaves, and seeded rye.</p>
+                <span class="status-pill status-upcoming">Proofing in Baskets</span>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="time-marker">12:30 PM</div>
+              <div class="timeline-detail">
+                <h4>Afternoon Dinner Hearth Drop</h4>
+                <p>Fresh second batch of crusty loaves for the evening table.</p>
+                <span class="status-pill status-upcoming">Planned Batch</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 'Contact Us' Section -->
+    <section class="section contact-section" id="contact-us">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Connect &amp; Visit</span>
+          <h2 class="section-title color-yellow" style="color: yellow;">Contact Us</h2>
+          <p class="section-subtitle">Reserve your daily loaf for evening pickup, ask about custom catering and events, or simply drop a note.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Information Cards -->
+          <div class="contact-info-panel">
+            <div class="info-card">
+              <div class="info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="info-text">
+                <h3>Our Bakery &amp; Stone Mill</h3>
+                <p>418 Artisan Row, Old Mill Quarter<br>Portland, OR 97209</p>
+                <a href="https://maps.google.com" target="_blank" rel="noopener" class="text-link">Get Directions &rarr;</a>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="info-text">
+                <h3>Baking Hours</h3>
+                <p>Tuesday – Saturday: <strong>7:00 AM – 3:00 PM</strong><br>
+                Sunday: <strong>8:00 AM – 2:00 PM</strong><br>
+                <em>(Or until today's loaves sell out)</em><br>
+                Monday: <em>Closed for Flour Mill Maintenance</em></p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="info-text">
+                <h3>Direct Lines</h3>
+                <p>Phone: <a href="tel:5035550198" class="text-link">(503) 555-0198</a><br>
+                Email: <a href="mailto:hello@levainandhearth.com" class="text-link">hello@levainandhearth.com</a></p>
+              </div>
+            </div>
+
+            <!-- Current Bakery Live Status Banner -->
+            <div class="bakery-live-banner">
+              <span class="live-dot"></span>
+              <div>
+                <strong>Bakehouse Currently Open</strong>
+                <p>Fresh sourdough batards and pastries available at the counter.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pure HTML5 Contact & Loaf Reservation Form -->
+          <div class="contact-form-panel">
+            <div class="form-wrapper">
+              <div class="form-header">
+                <h3>Send Us A Note or Reserve A Loaf</h3>
+                <p>Planning a gathering or want a loaf put aside? Fill in the details below.</p>
+              </div>
+
+              <form action="#contact-us" method="GET" class="artisan-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="form-name">Your Full Name <span class="required">*</span></label>
+                    <input type="text" id="form-name" name="name" placeholder="e.g. Eleanor Vance" required autocomplete="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="form-email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="form-email" name="email" placeholder="eleanor@example.com" required autocomplete="email">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="form-phone">Phone Number (For Order Updates)</label>
+                    <input type="tel" id="form-phone" name="phone" placeholder="(503) 555-0100" autocomplete="tel">
+                  </div>
+                  <div class="form-group">
+                    <label for="form-inquiry">Reason for Reaching Out</label>
+                    <select id="form-inquiry" name="inquiry">
+                      <option value="reserve">Reserve Today's Bread</option>
+                      <option value="catering">Special Event / Catering Inquiry</option>
+                      <option value="wholesale">Wholesale &amp; Restaurant Supply</option>
+                      <option value="general">Our Story &amp; Baking Workshops</option>
+                      <option value="feedback">Friendly Note or Feedback</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-loaf">Select Desired Bake (If Reserving)</label>
+                  <select id="form-loaf" name="loaf">
+                    <option value="none">-- Not reserving bread / general inquiry --</option>
+                    <option value="batard">Country Sourdough Batard ($9.50)</option>
+                    <option value="croissants">Pack of 4 Butter Croissants ($18.00)</option>
+                    <option value="boule">Seeded Midnight Boule ($10.50)</option>
+                    <option value="baguette">Heirloom Baguette de Tradition ($4.50)</option>
+                    <option value="baker-box">Baker's Morning Choice Box ($24.00)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-message">Your Message or Pickup Time <span class="required">*</span></label>
+                  <textarea id="form-message" name="message" rows="4" placeholder="Tell us about your request or the approximate time you would like to stop by..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-submit">
+                  <span>Send Request &amp; Hold Bread</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="brand-text">
+          <span class="brand-title">LEVAIN &amp; HEARTH</span>
+          <span class="brand-subtitle">Artisan Boulangerie &bull; Stone Hearth Tradition</span>
+        </div>
+        <p class="footer-tagline">Crafting honest, wild-fermented bread that feeds body and soul. Respecting the grain, the yeast, and the community we love.</p>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Quick Navigation</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#our-story" class="color-yellow" style="color: yellow;">Our Story</a></li>
+          <li><a href="#signature-bakes">Daily Bakes</a></li>
+          <li><a href="#oven-schedule">Baking Times</a></li>
+          <li><a href="#contact-us" class="color-yellow" style="color: yellow;">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Heritage Ethos</h4>
+        <ul>
+          <li><span>100% Wild Sourdough</span></li>
+          <li><span>Locally Stone-Milled</span></li>
+          <li><span>Zero Preservatives</span></li>
+          <li><span>Regenerative Agriculture</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Weekend Flour Dispatch</h4>
+        <p>Subscribe for secret weekend specialty loaf drops and seasonal sourdough workshops.</p>
+        <form action="#hero" method="GET" class="newsletter-form">
+          <input type="email" name="subscriber_email" placeholder="Enter your email" required aria-label="Email for bakery newsletter">
+          <button type="submit" aria-label="Subscribe to newsletter">&rarr;</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Levain &amp; Hearth Artisan Bakery. Handcrafted with HTML &amp; CSS only.</p>
+      <div class="footer-bottom-links">
+        <a href="#our-story" class="color-yellow" style="color: yellow;">Our Story</a>
+        <span>&bull;</span>
+        <a href="#contact-us" class="color-yellow" style="color: yellow;">Contact Us</a>
+        <span>&bull;</span>
+        <a href="#hero">Back to Top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Pure JavaScript solution to add button and change background -->
+  <script src="script.js"></script>
+  <script>
+    (function() {
+      if (window.__bgChangeButtonLoaded) return;
+      window.__bgChangeButtonLoaded = true;
+
+      const backgrounds = [
+        { name: 'Vibrant Blue', color: '#1d4ed8' },
+        { name: 'Forest Green', color: '#15803d' },
+        { name: 'Crimson Red', color: '#b91c1c' },
+        { name: 'Warm Amber Orange', color: '#c2410c' },
+        { name: 'Royal Purple', color: '#7e22ce' },
+        { name: 'Ocean Teal', color: '#0f766e' },
+        { name: 'Original Hearth', color: '#100c09' }
+      ];
+
+      let currentIndex = 0;
+
+      function applyBackgroundColor(theme) {
+        document.body.style.backgroundColor = theme.color;
+        document.body.style.background = theme.color;
+        if (document.documentElement) {
+          document.documentElement.style.backgroundColor = theme.color;
+          document.documentElement.style.background = theme.color;
+          document.documentElement.style.setProperty('--color-bg-base', theme.color);
+          document.documentElement.style.setProperty('--color-bg-surface', theme.color);
+        }
+
+        const elementsToClear = document.querySelectorAll(
+          '.section, section, .signature-section, .story-section, .schedule-section, .contact-section, .site-footer'
+        );
+        elementsToClear.forEach(function(el) {
+          el.style.backgroundColor = 'transparent';
+          el.style.background = 'transparent';
+        });
+
+        const heroBg = document.querySelector('.hero-background-wrapper');
+        if (heroBg) {
+          heroBg.style.opacity = theme.color === '#100c09' ? '1' : '0.22';
+          heroBg.style.transition = 'opacity 0.3s ease';
+        }
+        const heroOverlay = document.querySelector('.hero-overlay');
+        if (heroOverlay) {
+          heroOverlay.style.background = theme.color === '#100c09' ? '' : 'transparent';
+        }
+
+        let dynamicStyle = document.getElementById('dynamic-bg-override');
+        if (!dynamicStyle) {
+          dynamicStyle = document.createElement('style');
+          dynamicStyle.id = 'dynamic-bg-override';
+          document.head.appendChild(dynamicStyle);
+        }
+
+        dynamicStyle.textContent = `
+          body {
+            background-color: ${theme.color} !important;
+            background: ${theme.color} !important;
+            transition: background-color 0.3s ease !important;
+          }
+          .signature-section,
+          .story-section,
+          .schedule-section,
+          .contact-section,
+          .site-footer,
+          .section {
+            background: transparent !important;
+            background-color: transparent !important;
+          }
+          .hero-background-wrapper {
+            opacity: ${theme.color === '#100c09' ? '1' : '0.22'} !important;
+          }
+          .hero-overlay {
+            background: ${theme.color === '#100c09' ? '' : 'transparent'} !important;
+          }
+        `;
+      }
+
+      function initButton() {
+        let button = document.getElementById('bg-change-btn');
+        if (!button) {
+          button = document.createElement('button');
+          button.id = 'bg-change-btn';
+          button.type = 'button';
+          button.textContent = '🎨 Change Background';
+
+          button.style.position = 'fixed';
+          button.style.top = '12px';
+          button.style.left = '12px';
+          button.style.zIndex = '999999';
+          button.style.padding = '10px 18px';
+          button.style.fontFamily = 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+          button.style.fontSize = '14px';
+          button.style.fontWeight = '700';
+          button.style.color = '#100c09';
+          button.style.backgroundColor = '#e5a453';
+          button.style.border = '2px solid #ffffff';
+          button.style.borderRadius = '30px';
+          button.style.cursor = 'pointer';
+          button.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.6)';
+          button.style.outline = 'none';
+          button.style.transition = 'all 0.2s ease';
+          button.style.display = 'inline-flex';
+          button.style.alignItems = 'center';
+          button.style.gap = '8px';
+
+          button.onmouseenter = function() {
+            button.style.backgroundColor = '#f7ca88';
+            button.style.transform = 'translateY(-2px) scale(1.05)';
+          };
+          button.onmouseleave = function() {
+            button.style.backgroundColor = '#e5a453';
+            button.style.transform = 'translateY(0) scale(1)';
+          };
+
+          button.onclick = function() {
+            currentIndex = (currentIndex + 1) % backgrounds.length;
+            const currentTheme = backgrounds[currentIndex];
+            applyBackgroundColor(currentTheme);
+            button.textContent = '🎨 ' + currentTheme.name;
+          };
+
+          document.body.prepend(button);
+        }
+
+        const textElements = document.querySelectorAll('a, span, h2, .dropdown-item');
+        textElements.forEach(function(el) {
+          const text = el.textContent.trim().toLowerCase();
+          if (text === 'our story' || text === 'contact us') {
+            el.style.color = 'yellow';
+          }
+        });
+
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+        if (dropdownToggle && dropdownMenu) {
+          dropdownToggle.addEventListener('click', function(e) {
+            if (window.innerWidth <= 991) {
+              e.preventDefault();
+              dropdownMenu.classList.toggle('active');
+            }
+          });
+        }
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initButton);
+      } else {
+        initButton();
+      }
+    })();
+  </script>
+</body>
+</html>
